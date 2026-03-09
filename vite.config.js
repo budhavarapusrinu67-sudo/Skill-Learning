@@ -5,5 +5,5 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/skill-learning/",  // Required for GitHub Pages deployment
+  base: "./",  // Makes paths relative, fix for GitHub Pages case sensitivity and paths
 });
